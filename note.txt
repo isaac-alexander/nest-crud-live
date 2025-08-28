@@ -1,0 +1,23 @@
+Nest is framework highly inspired by angular code it like angular for backend 
+
+
+steps to install nestjs
+
+- npm install -g @nestjs/cli
+
+- nest --version
+
+- nest new nest-crud-live (nest-crud-live is the project name)
+
+- cd nest-crud-live (go to the file)
+
+- npm i pg typeorm @nestjs/typeorm @nestjs/config (install dependecies)
+
+code . (open vs code)
+_____________________________________________________
+ 
+-nest g module users (generate users module)
+
+-nest g service users (generate service)
+
+- touch src/users/user.entity.ts
