@@ -21,3 +21,12 @@ _____________________________________________________
 -nest g service users (generate service)
 
 - touch src/users/user.entity.ts
+
+
+Entity is to tell that we want this not to be just a generic typescript class but something that we want to use to create some tables innside the database
+
+
+async findOne(id: number): Promise<User | null> {
+    return await this.usersRepository.findOne({ where: { id } });
+}
+<User | null> allows null to be returned. optional chaining
