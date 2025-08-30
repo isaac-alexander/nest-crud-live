@@ -30,3 +30,10 @@ async findOne(id: number): Promise<User | null> {
     return await this.usersRepository.findOne({ where: { id } });
 }
 <User | null> allows null to be returned. optional chaining
+
+
+in the user.module file, import { TypeOrmModule } from '@nestjs/typeorm'; and import { User } from './user.entity';
+in the @Module   imports: [TypeOrmModule.forFeature([User])],
+
+
+$ touch Dockerfile .dockerignore docker-compose.yml
